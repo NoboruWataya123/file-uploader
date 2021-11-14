@@ -1,0 +1,171 @@
+@import "mixins";
+@import "variables.module.scss";
+
+:export {
+    primaryColor: $primary-color;
+    white: $white;
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload_box{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    border: 1px dashed #97BEF4;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+
+    &_input {
+        background: #F6F8FB;
+        background-image: url("../public/image.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px 100px;;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    ::-webkit-file-upload-button {
+        display: none;
+     }
+    input[type=file] {
+        width: 100%;
+        height: 100%;
+        padding:  0 auto;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.span{
+    margin: 0.2rem 0 1rem 0;
+}
+
+.upload_label{
+    position: absolute;
+    top: 80%;
+}
+
+.box{
+    width: 30%;
+    height: 65%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+
+    &_input {
+        background: #2F80ED;
+        border-radius: 8px;
+        width: 101px;
+        height: 51.98px;
+        padding: 0.4rem 0 0 0.35rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+    }
+    ::-webkit-file-upload-button {
+        display: none;
+     }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: $white;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .upload_box{
+        position: relative;
+        width: 90%;
+        height: 100%;
+        border-radius: 12px;
+        display: flex;
+        border: 1px dashed #97BEF4;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 2rem 0;
+
+        &_input {
+            background: #F6F8FB;
+            background-image: url("../public/image.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 200px 100px;;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        ::-webkit-file-upload-button {
+            display: none;
+         }
+        input[type=file] {
+            width: 100%;
+            height: 100%;
+            padding:  0 auto;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+    .span{
+        margin: 0.2rem 0 1rem 0;
+    }
+    .upload_label{
+        position: absolute;
+        top: 80%;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    
+}
+}
